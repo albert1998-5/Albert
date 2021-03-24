@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <div id="div1">
+        <h2>div1 jQuery AJAX Change This Text</h2>
+    </div>
+    <div id="div2">
+        <h2>div2 jQuery AJAX Change This Text</h2>
+    </div>
+
+    <button id="button1">Get External Content</button>
+
+    <button id="button2">button2</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#button1").click(function () {
+                $("#div1").load("demo_test.txt", function (responseTxt, statusTxt, xhr) {
+                    if (statusTxt == "success")
+                        alert("External content loaded successfully!");
+                    if (statusTxt == "error")
+                        alert("Error: " + xhr.status + ": " + xhr.statusText);
+                });
+            });
+
+            $("#button2").click(function () {
+                $("#div2").load("demo_test.php", function (responseTxt, statusTxt, xhr) {
+                    if (statusTxt == "success")
+                        alert("External content loaded successfully!");
+                    if (statusTxt == "error")
+                        alert("Error: " + xhr.status + ": " + xhr.statusText);
+                });
+            });
+
+
+
+        });
+    </script>
+</body>
+
+</html>

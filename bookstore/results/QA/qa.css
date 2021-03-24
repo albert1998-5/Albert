@@ -1,0 +1,33 @@
+/* 圖片 */
+img {
+    width: 500px;
+    
+}
+
+/* customerser main置中 */
+
+.center{
+    text-align: center;
+}
+
+/* main 字型大小顏色設定 */
+#main .book_list td h1{
+    font-size: 30px;
+    }
+
+#main .book_list td {
+    font-size: 18px;
+   }
+#main .book_list a {
+    font-size: 20px;
+    background-color: lightcoral;
+   }
+  
+.fontweight{
+    font-weight: bold;
+    font-size: 18px;
+}
+.colorred{
+    font-weight: bold;
+    color: red;
+}

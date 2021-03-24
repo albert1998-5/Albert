@@ -1,0 +1,267 @@
+/* all */
+body{
+    /* width: 100%;
+    margin: 0px auto; */
+    background-color: rgb(241,242,246);
+    margin: 0px auto;
+  }
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* 1280之上 */
+@media screen and (min-width : 1280px){
+    body{
+        width: 1200px;
+        
+    }
+    .book{
+        width: 20%;
+        /* width: 60vh; */
+        /* height: 305px; */
+    }
+    
+    /* .book img{
+
+        height: 200px;
+    } */
+}
+
+
+/* 480~1280 */
+@media screen and (max-width : 1280px) and (min-width : 480px){
+    body{
+        width: 900px;
+        
+    }
+
+    .book{
+        width: 25%;
+        
+        
+    }
+
+
+    /* .book img{
+
+        height: 250px;
+    } */
+
+    .book:nth-last-child(1),.book:nth-last-child(2){
+        display: none;
+    }
+}
+
+
+
+
+/* 480以下 */
+@media screen and (max-width : 480px){
+    #menu ,.book_list>p{
+        display: none;
+    }
+
+
+    img{
+
+        height: 100%;
+    }
+
+}
+
+
+
+/* header */
+#header{
+    height: 100px;
+    
+    margin: 0px auto;
+    
+}
+
+#header>img{
+    height: 50%;
+}
+
+#user_list{
+    float: right;
+}
+
+#user_list a{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+
+/* content */
+#content{
+    width: 100%;
+    margin: auto;
+
+
+}
+
+#menu{
+    width: 15%;
+    float: left;
+    height: 100vh;
+    
+    
+    /* margin: 3px; */
+    /* 加透明邊框 */
+    
+    /* border-radius: 10%; */
+}
+
+#menu a{
+    display: block;
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+    
+
+}
+
+
+
+#main{
+    width: 85%;
+    float: right;
+}
+
+
+/* book_list */
+/* 商品列 */
+.book_list{
+    width: 100%;
+    clear: both;
+}
+
+.book_list>div:first-child{
+    margin-left: 5px;
+    line-height: 1.7em;
+}
+
+
+
+/* 商品 */
+.book{
+    float: left;
+    text-align: center;
+    line-height: 25px;
+}
+
+.book:hover{
+    opacity: 0.7;
+}
+
+.book>img:first-child{
+    height: 200px;
+}
+
+/* 標題 */
+.book>div:nth-child(2){
+    font-size: 25px;
+    color: black;
+    font-weight: bolder;
+    height: 25px;
+    height: 25px;
+
+}
+/* 作者 */
+.book>div:nth-child(3){
+    font-size: 15px;
+    color: gray;
+    height: 50px;
+    height: 50px;
+}
+/* 金額 */
+.book>div:nth-child(4){
+    font-size: 15px;
+    color: red;
+    height: 25px;
+    height: 25px;
+    
+}
+
+
+
+
+/* foother */
+
+#footer{
+    width: 100%;
+    height: 50px;
+    clear: both;
+
+    margin: auto;
+
+
+}
+
+/* 調色盤 */
+
+/* 面板色彩 */
+#header , #footer{
+    background-color: #00296B;
+}
+
+.book_list{
+    background-color: rgb(254,169,27);
+}
+
+
+/* 商品 */
+.book{
+    background-color: white;
+}
+
+/* 字體顏色 */
+ .book_list>div:first-child {
+    color: white;
+}
+
+
+
+/* color :hover */
+#user_list{
+    font-size: 12px;
+
+}
+
+#header>a{
+    font-size: 50px;
+    line-height: 100px;
+}
+#header a , #user_list a{
+    color: white;
+}
+
+#menu a{
+    color: #00296B;
+}
+
+#header a:hover, #menu a:hover{
+    color: #6d9eeb;
+}
+
+
+
+
+
+
+/* 邊距 */
+#footer ,.book_list , #menu {
+    border-top: 8px solid rgb(241,242,246);
+}
+
+
+

@@ -1,0 +1,108 @@
+Lang="zh-TW"
+
+<title>林肯運動鞋專賣店-電子商店
+
+<span>全台最專業運動鞋購物平台,不出門也能盡享購物樂趣，多款跑鞋低價超值折扣,型男美女必買商品!多款知名品牌運動鞋隨你挑,全館激殺價，千萬別錯過,加入會員首次購物拿500,12H速達早上訂下午到貨
+
+Lang="zh-TW"
+
+<title>林肯運動鞋專賣店-電子商店
+
+jumbotron
+<h1>！讓我們一起動起來！
+<p>在運動出汗的過程中，皮膚的新陳代謝加快，毒素排出體外，而且出汗還能夠幫助清潔毛孔，有效護膚美容。</p>
+<p>讓我們提供一雙好的運動鞋來幫助你。
+<p>林肯運動鞋專賣店-電子商店
+buttom
+Show more
+
+production
+<h1>站長推廌熱銷運動鞋
+
+<img>pic61.jpg alt=adidas 休閒慢跑鞋
+<h3 alt>adidas 休閒慢跑鞋
+<p>Loop Racer 全黑 復古 運動鞋 男鞋 女鞋 B42446，愛迪達 Originals 三葉草 輕量透氣舒適運動球鞋穿搭推薦,男女款情侶鞋
+<p>NT2500
+
+<img>pic62.jpg alt="Reebok 休閒慢跑鞋"
+<h3>Reebok 休閒慢跑鞋
+<p>Reebok Insta Pump Fury SP 藍 灰 麂皮 潑漆 雪花 休閒鞋 男鞋 平底鞋 休閒鞋 慢跑鞋 球鞋 情侶運動鞋
+<p>NT4580</p>
+
+<img>pic63.jpg" alt="Nike 阿甘鞋"
+<h3>Nike 阿甘鞋
+<p>Wmns Classic Cortez Leather 復古慢跑鞋 白藍紅 OG 原版配色 女鞋 漢娜妞 松本惠奈 女孩球鞋穿搭推薦款式 百搭熱銷款 皮面不容易髒
+<p>NT3380
+
+<img>pic64.jpg" alt="Puma 慢跑鞋"
+<h3>Puma 慢跑鞋
+<p>Speed 600 Ignite Pwrcool Wn 黃銀 運動 女鞋 188521-02 Running 超輕量透氣 低筒 跑步健身訓練推薦鞋款
+<p>NT2880
+
+<img>pic65.jpg" alt="Asics 慢跑鞋"
+<h3>Asics 慢跑鞋
+<p>競速跑鞋 Tartherzeal 4 藍 橘 白底 男鞋 輕量 運動鞋 TJR282-5230 Racing 低筒 虎走 馬拉松 路跑推薦款式 特殊專業跑鞋設計
+<p>NT3490
+<img>pic66.jpg" alt="美津濃 Mizuno Prophecy 5"
+<h3>美津濃Mizuno Prophecy 5
+<p>美津濃 Mizuno Prophecy 5藍黃 彈簧 慢跑鞋 男鞋 J1GC16-0047 Running U4ic中底材質,X10耐磨INFINITY WAVE大底
+<p>NT5080
+
+sportlogo
+<h1>品牌精選
+<img>pic71.jpg alt=adidas
+<img>pic72.jpg alt=Reebok
+<img>pic73.jpg alt=Mizuno
+<img>pic74.jpg alt=Nike
+<img>pic75.jpg alt=Kappa
+<img>pic76.jpg alt=PUMA
+<img>pic77.jpg alt=CONVERSE
+<img>pic78.jpg alt=SPRIT
+
+
+buyrules
+<i class="fa fa-envelope" aria-hidden="true"></i>
+<h1>我們的服務
+
+<h1><i class="fa fa-user" aria-hidden="true"></i>
+<h4>購物需知
+<p>★如本店有正當理由無法接受您的訂單，將於收到您的訂單後二個工作日附正當理由通知您。但已付款者視為契約成立。
+
+<h1><i class="fa fa-align-justify" aria-hidden="true"></i>
+<h4>付款方式
+<p>★超商付款取貨，至超商取貨時付款，全家繳費不取貨，適用無卡片轉帳且需宅配取件的顧客，線上刷卡，信用卡一次付清。
+
+<h1><i class="fa fa-angle-double-down" aria-hidden="true"></i>
+<h4>交貨方式
+<p>★黑貓宅配包裹：寄出後1-2天送達，可選擇送達時段，郵局包裹寄送：寄出後1-2天送達，外島地區寄出後3-7天送達。
+
+<h1><i class="fa fa-address-card" aria-hidden="true"></i> 
+<h4>退換貨說明
+<p>★登入填寫退貨單，由平台請宅配收取退貨，需完整保留商品及其配件，並簡易包裝保護商品，勿直接使用膠帶黏貼商品。
+
+<h1><i class="fa fa-car" aria-hidden="true"></i>
+<h4>出貨時間
+<p>★每日商品依訂單成立時間，服務時間星期一至五 9:30-21:30，(星期六、日及特定國定假日，無提供出貨服務)。
+
+<h1><i class="fa fa-anchor " aria-hidden="true"></i>
+<h4>連絡方式
+<p>★(02)7717-9177 分機202 電子商城客服專員，服務時間：星期一至五 9:30-18:30 (12:30-13:30為午休時間)。
+
+footer
+<h4>林肯運動鞋專賣店 地址：40767台中市西屯區工業區一路100號 電話：04-23592181 免付費電話：0800-555666</h4>
+COPYRIGHT &copy; LINCAN SPORT SERVICE CO, ALL RIGHT RESERED.
+
+
+nav
+<li><a href="#production">站長推薦</a></li>
+<li><a href="#sportlogo">品牌精選</a></li>
+<li><a href="#buyrules">服務說明</a></li>
+<li><a href="#contact">連絡我們</a></li>
+dropdown-menu：會員中心
+	<li><a href="#">訂單查詢</a></li>
+	<li><a href="#">退訂／退款查詢</a></li>
+	<li><a href="#">現金積點查詢</a></li>
+	<li><a href="#">折價券查詢</a></li>
+<li><a href="#">登入</a></li>
+<li><a href="#">註冊</a></li>
+<li><a href="#">登出</a></li>

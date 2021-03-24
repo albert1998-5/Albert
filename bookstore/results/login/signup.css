@@ -1,0 +1,82 @@
+#content{
+    /* background-image: url(images/loginbackground.jpg);
+    background-position:center;
+    background-size: 100% 100% ; */
+
+}
+#main{
+    /* background-color: #256; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-left: 5px;
+}
+#left{
+    width: 20%;
+}
+.signup_box{
+    background-color:rgba(255, 255, 255, 0.5);
+    margin: 5px ;
+    width: 600px;
+    border-radius: 1%;
+    box-shadow: 0px 2px 5px #333;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+table{
+    /* border: 1px solid #000; */
+}
+table th{
+    /* border: 1px solid #000; */
+    text-align: right;
+    vertical-align: top;
+    padding: 8px;
+    font-size: 16px;
+    font-weight:500;
+    width: 30%;
+    
+}
+table td{
+    /* border: 1px solid #000; */
+    text-align: left;
+    vertical-align: top;
+    padding: 4px;
+    font-size: 12px;
+    font-weight:300;
+    
+}
+.msg01{
+    font-size: 15px;
+    font-weight:300;
+    padding: 0px 60px; 
+}
+.msg01 b{
+    font-weight:500;
+}
+.msg01 p{
+    font-weight:300;
+    padding: 0px 25px; 
+}
+.input01{
+    width: 200px;
+    margin: 5px 0px ;
+    height: 22px;
+    border-radius: 2px;
+    border: 1px solid darkgray;
+    outline:none;
+}
+.input02{
+    width: 85px;
+    height: 22px;
+    margin: 6px 0px ;
+}
+
+.signup_input{
+    width: 205px;
+    height: 40px;
+    margin: 4px 80% ;
+    background-color: #00296B;
+    color: #fff;
+    
+}

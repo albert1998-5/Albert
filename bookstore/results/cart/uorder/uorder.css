@@ -1,0 +1,239 @@
+/* all */
+.flex{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+h3{
+    margin: 2rem 5rem;
+}
+hr{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+
+/*** left content *************************/
+
+.order_content{
+    flex: 0 1 30%;
+    min-height: 65vh;
+    background-color: #fff;
+    letter-spacing: 1px;
+    border: 1px solid #eee;
+    border-radius:30px 30px;
+    margin: 0 2rem;
+    padding: 2rem 2rem;
+    box-shadow: 3px 3px 3px #999;
+
+}
+.order_content .title{
+    flex: 1 1 100%;
+    height: 2rem;
+    padding-bottom: 0.7rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    text-align: center;
+    border-bottom: 1px solid #999;
+    color: #666;
+    font-size: 1rem;
+}
+.content table{
+    width: 100%;
+}
+.content table tr{
+    height: 3.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    /* background-color: yellow; */
+}
+
+/* 活動標示 */
+.s_list{
+    height: 1rem;
+    vertical-align: top;
+    font-size: 0.8rem;
+    color:  #a30909;
+    margin-bottom: 1.6rem;
+    margin-top: 0.4rem;
+    /* background-color: cornflowerblue; */
+}
+
+/* 總金額顯示區 */
+.total table{
+    width: 100%;
+    text-align: right;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    border-top:  1px solid #999;
+    /* background-color: rgb(0, 225, 255); */
+}
+.total table tr{
+    height: 1.5rem;
+}
+.total td:first-child{
+    width: 84%;
+}
+
+/*** right content *****************************/
+
+.pay_list{
+    flex: 0 1 30%;
+    min-height: 65vh;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 30px 30px;
+    margin: 0 2rem;
+    padding: 1.8rem 2rem;
+    box-shadow: 3px 3px 3px #999;
+}
+.pay_list table tr{
+    height: 2.5rem;
+}
+.pay_list table tr td{
+    width: 3%;
+    padding-top: 20px;
+    padding-left: 1rem;
+    
+}
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.button button{
+    flex: 0 0 25%;
+}
+
+
+/* footer */
+#footer{
+    margin-top: 3rem;
+}
+
+/* *** RWD*************************************** */
+
+/* 1280之上 瀏覽器*/
+@media screen and (min-width : 1280px){
+    html{
+        font-size: 16px;
+    }
+
+    
+}
+
+/* 480~1280 平板*/
+@media screen and (max-width : 1280px) and (min-width : 700px){
+    html{
+        font-size: 16px;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .order_content{
+        min-height: 25vh;
+        margin-bottom: 2rem;
+    }
+    .pay_list{
+        min-height: 30vh;
+    }
+    .total td:first-child{
+        width: 200px;
+    }
+}
+
+
+
+
+/* 480以下 手機*/
+@media screen and (max-width : 700px){
+    html{
+        font-size: 14px;
+    }
+    .flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    .order_content{
+        width: 85%;
+        min-height: 25vh;
+        margin-bottom: 2rem;
+    }
+    .s_list{
+        display: none;
+    }
+    .total td:first-child{
+        text-align: left;
+        width: 70%;
+    }
+    .pay_list{
+        display: flex;
+        width: 85%;
+    }
+    .pay_list table{
+        margin: auto;
+        width: 100%;
+    }
+    .pay_list table td:first-child{
+        width: 1%;
+    }
+    .pay_list input[type="text"]{
+        width: 90%;
+        margin-top: 0.5rem;
+    }
+    .pay_list textarea{
+        width: 90%;
+        margin-top: 0.5rem;
+    }
+    .pay_list td:first-child{
+        /* display: none; */
+        /* background-color: darkcyan; */
+    }
+    /* .pay_list .b1::before{
+        content: "會員帳號：\A"; 
+        white-space: pre-line;
+    }
+    .pay_list .b2::before{
+        content: "收件人姓名：\A"; 
+        white-space: pre-line;
+    }
+    .pay_list .b3::before{
+        content: "連絡電話：\A"; 
+        white-space: pre-line;
+    }
+    .pay_list .b4::before{
+        content: "運送方式：\A"; 
+        white-space: pre-line;
+    }
+    .pay_list .b5::before{
+        content: "收件地址：\A"; 
+        white-space: pre-line;
+    }
+    .pay_list .b6::before{
+        content: "超商地址：\A"; 
+        white-space: pre-line;
+    }
+    .pay_list .b7::before{
+        content: "支付方式：\A"; 
+        white-space: pre-line;
+    }
+    .pay_list .b8::before{
+        content: "訂單備註：\A"; 
+        white-space: pre-line;
+    } */
+    .button{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    
+}

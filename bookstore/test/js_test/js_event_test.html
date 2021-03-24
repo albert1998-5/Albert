@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header{
+            width: 100%;
+            height: 200px;
+            background-color: rgb(190, 56, 56);
+
+            position: sticky;
+            top: 0;
+        }
+
+        body{
+            height: 200vh;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    
+</body>
+<script>
+    let header = document.querySelector("#header");
+    
+    window.addEventListener("scroll", () => {
+        if(window.pageYOffset != 0){
+            header.style = "box-shadow:3px 3px 5px 1px #757474";
+        }else{
+            header.style = "box-shadow:none";
+        }
+        
+
+        if(window.pageYOffset != 0){
+            header.style = "box-shadow:3px 3px 5px 1px #757474";
+        }else{
+            header.style = "box-shadow:none";
+        }
+
+
+    });
+
+</script>
+
+
+</html>

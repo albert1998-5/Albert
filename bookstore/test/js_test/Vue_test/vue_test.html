@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    * {
+        box-sizing: border-box;
+        
+    }
+
+
+    table {
+        border-collapse: collapse;
+    }
+
+    h2 {
+        margin-top: 30px;
+
+
+    }
+
+    table * {
+        border: 1px solid black;
+    }
+
+
+</style>
+
+<body>
+
+    <h2>v-bind_1</h2>
+    <div id="v-bind_1" v-bind:title="testTitle" v-bind:style="testStyle">
+        {{message}}
+    </div>
+
+
+
+    <h2>V-if</h2>
+    <div id="Vue_if" v-if="seen">如果seen為真，{{seen}}</div>
+
+    <h2>V-else-if</h2>
+    <div id="Vue_else_if">
+        <h1 v-if="nat_price <= 1">{{nat_price}}萬元，低廉</h1>
+        <h1 v-else-if="nat_price == 2">{{nat_price}}萬元，價格還可以</h1>
+        <h1 v-else-if="nat_price == 3">{{nat_price}}萬元，價格預算內</h1>
+        <h1 v-else>{{nat_price}}萬元，價格超出預算</h1>
+    </div>
+
+
+
+
+    <h2>v-for</h2>
+    <div id="v-for_1">
+        v-for
+        <ul>
+            <li v-for="x in todos">
+                {{ x.text }}
+            </li>
+        </ul>
+    </div>
+
+    <h2>v-for_test</h2>
+    <table id="v-for_test">
+        <tr v-for="i in test_for">
+            <td>
+                {{ i.text }}
+
+
+            </td>
+            <td>
+                {{ i.test }}
+            </td>
+
+        </tr>
+    </table>
+
+    <h2>v-for&if_test</h2>
+    <table id="v-for_if_test">
+        <tr v-for="i in nat_price_list">
+            <td v-if="i.nat_price <= 1">{{i.nat_price}}萬元，低廉</td>
+            <td v-else-if="i.nat_price == 2">{{i.nat_price}}萬元，價格還可以</td>
+            <td v-else-if="i.nat_price == 3">{{i.nat_price}}萬元，價格預算內</td>
+            <td v-else="i.nat_price == 4">{{i.nat_price}}萬元，價格超出預算</td>
+        </tr>
+    </table>
+
+    <h2>fun_click</h2>
+    <div id="fun_click">
+        <p>手機名稱：{{mod_name}}，預計價格：NT${{price}}元</p>
+        <p>111</p>
+        <button type="button" v-on:click="btn_click()">自動產生價格</button>
+        <p>產生後價格：約{{nat_price}}萬元</p>
+        <h1 v-if="nat_price <= 1">{{nat_price}}萬元，低廉</h1>
+        <h1 v-else-if="nat_price == 2">{{nat_price}}萬元，價格還可以</h1>
+        <h1 v-else-if="nat_price == 3">{{nat_price}}萬元，價格預算內</h1>
+        <h1 v-else>{{nat_price}}萬元，價格超出預算</h1>
+
+
+
+    </div>
+    <h2>fun_on_mouseover</h2>
+    <div id="fun_on_mouseover" v-bind:style="this_style" v-on:MouseOver="fun_on_mouseover('新文字')">
+        {{mod_text}}
+
+    </div>
+
+    <style>
+        aa5 {
+            color: red;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- 生产环境版本，优化了尺寸和速度 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <script>
+
+        // v-bind
+        var Vue_bind = new Vue({
+            el: "#v-bind_1",
+            data: {
+                message: "測試測試測試",
+                testTitle: "text in Title",
+                testStyle: "color: red;width: 300px;height:300px;background-color: black;"
+            },
+
+
+
+        });
+        // v-if
+        var Vue_if = new Vue({
+            el: "#Vue_if",
+            data: {
+                seen: true,
+
+
+            }
+
+        });
+
+        var Vue_else_if = new Vue({
+            el: "#Vue_else_if",
+            data: {
+                nat_price: 1,
+                max_price: 2,
+
+            }
+
+
+
+        });
+
+        // 迴圈 v-for
+        var myObject = new Vue({
+            el: '#v-for_1',
+            data: {
+                todos: [
+                    { text: 'Learn JavaScript' },
+                    { text: 'Learn Vue.js' },
+                    { text: 'Build Something Awesome' }
+                ]
+            }
+        });
+        // 迴圈 v-for
+        var Mytest_vue = new Vue({
+            el: '#v-for_test',
+            data: {
+                test_for: [
+                    {
+                        text: 'aaaaa.vue',
+                        // test: 'aaa.test'
+                    },
+                    {
+                        text: 'bbbbb.vue',
+                        test: 'bbb.test'
+                    },
+                    {
+                        text: 'ccccc.vue',
+                        test: 'ccc.test'
+                    },
+                ]
+            }
+        });
+
+        // 迴圈 v-for
+        var Mytest_vue = new Vue({
+            el: '#v-for_if_test',
+            data: {
+                max_price: 4,
+                nat_price_list: [
+                    { nat_price: 1 },
+                    { nat_price: 3 },
+                    { nat_price: 4 },
+                    { nat_price: 2 },
+
+
+                ],
+            }
+        });
+
+
+        // function_onclick
+        var fun_click = new Vue({
+            el: "#fun_click",
+            data: {
+                mod_name: 'Sony XPERIA 1',
+                price: 30900,
+                nat_price: 0,
+            },
+            methods: {
+                btn_click: function () {
+                    /* 設計1~6的亂數 */
+                    this.nat_price = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
+                },
+            },
+
+
+        });
+
+        var fun_on_mouseover = new Vue({
+            el: "#fun_on_mouseover",
+            data: {
+                mod_text: '舊文字',
+                this_style: "color: red;width: 300px;height:300px;background-color: black;",
+
+            },
+            methods: {
+                fun_on_mouseover: function (str) {
+                    this.mod_text = str;
+                    alert(str);
+                },
+            },
+
+
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

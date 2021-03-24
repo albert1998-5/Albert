@@ -1,0 +1,364 @@
+/* ! 分段 */
+
+/* all */
+body {
+    width: 100%;
+    margin: 0px auto;
+    background-color: rgb(241, 242, 246);
+    margin: 0px auto;
+    /* font-family: 'Noto Serif TC', serif,Arial, Helvetica, sans-serif; */
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header * {
+    box-sizing: border-box;
+}
+
+/* ! 維持*/
+
+/* header */
+#header {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+
+    /*固定標題列*/
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 3px 3px 5px 1px #757475;
+}
+
+#header img {
+    height: 60%;
+    margin: 0px 20px;
+}
+
+#logo {
+    height: 100px;
+    display: flex;
+    flex: 0 0 50%;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+#logo img {
+    width: 40px;
+    height: 35px;
+    margin-top: 7px;
+    /* background-color: yellow; */
+}
+
+#header .right {
+    display: flex;
+    flex: 0 0 50%;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* background-color: #fff; */
+}
+#user_list {
+    display: flex;
+    flex: 0 1 50%;
+    justify-content: flex-end;
+    font-weight: 300;
+    height: 20px;
+}
+
+#user_list a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.search_box {
+    display: flex;
+    flex: 0 1 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    height: 20px;
+    padding: 10px;
+}
+
+.search_box * {
+    font-size: 1.1rem;
+}
+
+/* content */
+#content {
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}
+
+#menu {
+    height: 100vh;
+
+    flex: 0 0 20%;
+    /* 加邊框 */
+    padding-left: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+
+    /* border-radius: 10%; */
+}
+
+#menu a {
+    display: block;
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+}
+
+#main {
+    flex: 6 0 80%;
+
+    /* width: 85%; */
+    /* float: right; */
+}
+
+/* book_list */
+/* 商品列 */
+.book_list {
+    width: 98%;
+    /* clear: both; */
+
+    /* flexbox */
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    box-shadow: -3px 3px 3px #ccc;
+}
+
+.book_list > div:first-child {
+    margin-left: 15px;
+    line-height: 2em;
+    font-size: 16px;
+    font-weight: 600;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.book_list .page_list {
+    margin-right: 1rem;
+}
+
+
+
+/* 商品 */
+.book {
+    /* float: left; */
+    text-align: center;
+    line-height: 25px;
+
+    padding-bottom: 3px;
+}
+
+.book:hover {
+    opacity: 0.8;
+}
+
+/* 照片 */
+.book > img:first-child {
+    height: 180px;
+    margin-top: 10px;
+}
+
+/* 標題 */
+.book > div:nth-child(2) {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    height: 50px;
+    width: 200px;
+
+    margin: auto;
+    /* 標題限制行數 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* 限制行數設定↓ */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+/* 作者 */
+.book > div:nth-child(3) {
+    font-size: 15px;
+    color: gray;
+    height: 20px;
+    padding: 10px;
+    line-height: 15px;
+}
+/* 金額 */
+.book > div:nth-child(4) {
+    font-size: 15px;
+    color: red;
+    height: 25px;
+    padding: 5px 0px;
+}
+
+/* foother */
+
+#footer {
+    display: flex;
+    /* width: 100vw; */
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    letter-spacing: 1px;
+
+    margin: auto;
+}
+
+/* ! RWD */
+
+/* 1280之上 瀏覽器*/
+@media screen and (min-width: 1280px) {
+    body {
+        /* width: 1200px; */
+        width: 98vw;
+    }
+    #menu {
+        font-size: 20px;
+    }
+
+    .book {
+        flex: 0 0 20%;
+    }
+}
+
+/* 480~1280 平板*/
+@media screen and (max-width: 1280px) and (min-width: 600px) {
+    body {
+        /* width: 900px; */
+        width: 90vw;
+    }
+    #menu {
+        font-size: 16px;
+    }
+
+    .book {
+        flex: 1 0 15vw;
+    }
+
+    /* .book:nth-last-child(1),.book:nth-last-child(2){
+        display: none;
+    } */
+}
+
+/* 480以下 手機*/
+@media screen and (max-width: 700px) {
+    body {
+        width: 100vw;
+    }
+
+    /* 隱藏 */
+    #menu,
+    .book_list > p,
+    #header {
+        display: none;
+    }
+
+    #content,
+    #main {
+        margin: auto;
+        flex: 6 0 100%;
+    }
+
+    .book {
+        flex: 0 0 100%;
+
+        display: flex;
+    }
+
+    .book > img:first-child {
+        height: 30vh;
+    }
+}
+
+/* ! 調色盤  */
+
+/* 面板色彩 */
+#header,
+#footer,
+#user_list {
+    background-color: #00296b;
+}
+
+.book_list {
+    background-color: #f9e7e7;
+}
+
+/* 商品 */
+.book {
+    background-color: white;
+}
+
+/* 字體顏色 */
+.book_list > div:first-child {
+    color: #a30909;
+}
+.book_list .page_list a{
+
+    color: #0400fd;
+}
+.book_list .page_list a:hover{
+    color: #fd0000;
+}
+
+
+
+/* color :hover */
+#user_list {
+    font-size: 14px;
+}
+
+#header > a {
+    font-size: 42px;
+    /* line-height: 50px; */
+}
+#header a,
+#user_list a {
+    color: white;
+}
+
+#menu a {
+    color: #00296b;
+}
+
+#user_list a:hover,
+#menu a:hover {
+    color: #6d9eeb;
+}
+
+/* 邊距 */
+/* .book_list , #menu {
+    border-top: 8px solid rgb(241,242,246);
+    border-bottom: 8px solid rgb(241,242,246);
+}
+.book_list{
+    border-right: px solid rgb(241,242,246);
+} */
+.book_list {
+    margin: 10px 0px;
+    margin-right: 10px;
+}
+#menu {
+    margin: 10px 0px;
+}

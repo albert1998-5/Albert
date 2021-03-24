@@ -1,0 +1,78 @@
+<?php
+session_start();
+/*路徑*/
+/* 客戶端 */
+$root_cust = "/bookstore";
+/* 預設為空 */
+// $root_cust = "";
+/* 本機端 */
+$root_local = $_SERVER['DOCUMENT_ROOT'] . $root_cust;
+?>
+
+<?php
+//引入檔案
+require_once($root_local . "/Connections/connSQL.php");
+require_once($root_local . "/script/script.php");
+
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="main_flex.css">
+    <link rel="stylesheet" href="thanks.css">
+
+    <!-- 正黑體 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- 標籤LOGO -->
+    <link rel="shortcut icon" href="<?php $root_cust; ?>/images/book-2.png">
+    <link rel="bookmark" href="<?php $root_cust; ?>/images/book-2.png">
+
+    <!-- wow.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+     <!-- header -->
+     <?php require_once($root_local . "/parts/header.php"); ?>
+
+     <!-- content -->
+    <div class="flex wow animate__animated animate__fadeInDown">
+        <img src="check.png" alt="">
+        <div class="title" >Thank You！</div>
+    </div>
+
+    <div class="torder wow animate__animated animate__zoomIn">
+       <table>
+           <tr>
+               <td>訂單號碼：</td>
+               <td>20210203-01</td>
+           </tr>
+           <tr>
+               <td>訂購時間：</td>
+               <td>2021/02/03　15:12:42</td>
+           </tr>
+           <tr>
+               <td>訂單狀態：</td>
+               <td>訂單處理中</td>
+           </tr>
+       </table>
+    </div>
+
+    <div class="msg">
+        已收到您的訂單，若須檢視訂單狀況或付款狀態，請至會員中心查詢！<br>
+        <div class="button" onclick="location.href='<?php $root_local; ?>'">繼續逛逛</div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,281 @@
+/* 購物車 shoppingcar.html */
+.flex_box{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+/* 整體 */
+#shopping_car{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 3px 3px #ccc;
+    border-radius: 10px 10px;
+}
+
+/* 我的購物車 */
+#main h3{
+    margin: 2rem 5rem;
+}
+#main>hr{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+/* 標題列 */
+.car_title{
+    display: flex;
+    height: 2rem;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #a30909;
+}
+
+/* 欄位寬度調整 */
+.chead{
+    flex: 0 1 50%;
+}
+.cqty{
+    flex: 0 1 10%;
+}
+.cprice{
+    flex: 1 1 10%;
+}
+.cdiscount{
+    flex: 1 1 10%;
+}
+.ccount{
+    flex: 1 1 10%;
+}
+.cdel{
+    flex: 0 1 10%;
+}
+
+
+
+/* 購買內容 */
+.order_list{
+    max-height: 18vh;
+    font-size: 1.1rem;
+    border-bottom: 1px dotted #999;
+    display: flex;
+    align-items: center;  
+}
+.order_list:hover{
+    opacity: 0.8;
+}
+    /****** 圖片容器 */
+.cimg{
+    max-height: 18vh;
+    flex: 0 2 15%;
+    align-items: center;
+    justify-content: center;
+}
+    /****** 圖片本身 */
+.cimg img{
+    max-height: 15vh;
+    border: 0.9px solid #ccc;
+    margin: 8px 0;
+}
+    /****** 書名.作者名 */
+.cname{
+    flex: 0 1 35%;
+    flex-direction: column;
+    line-height: 2rem;
+    text-align: left;
+    margin-top: -5px;
+}
+    /**** 活動資訊 */
+.csale{
+    font-size: 0.8rem;
+    color: #a30909;
+
+}
+    /****** 數量 */
+.cqty input{
+    font-size: 1rem;
+}
+
+
+
+
+/* 總計區 */
+#total{
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    margin-bottom: 60px;
+    display: flex;
+}
+#total div:nth-child(1){
+    width: 50%;
+   line-height: 10px;
+}
+#total div:nth-child(2){
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    /* margin-left: 50%; */
+    /* margin-top: 5%; */
+ }
+ #total div a:hover{
+     opacity: 80%;
+ }
+#total div p:nth-last-child(1){
+    font-size: 1.2rem;
+    color: red;
+}
+#total>hr{
+    margin-left: 0px;
+}
+.btn_pay{
+    width: 7vw;
+    height: 2vw;
+    min-width: 90px;
+    min-height: 30px;
+    margin: 0.3vw;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius:  50px 50px;
+}
+.btn_pay:hover{
+    background-color: #a30909;
+    color: #fff;
+}
+.btn_buy{
+    width:8%; 
+    height:8%; 
+    background-color: none; 
+    color:#a30909; 
+    border:1px solid #a30909; 
+    letter-spacing:1px;
+}
+.btn_buy:hover{
+    background-color: #a30909;
+    color: #fff;
+}
+
+
+/* ! 調色盤 */
+#shopping_car table{
+    color: #333;
+}
+#shopping_car{
+    background-color: #F9E7E7;
+}
+.order_list{ 
+    background-color: #fff;
+}
+#total{
+    background-color: #ebebeb;
+}
+
+
+
+
+
+
+
+/* ! RWD */
+
+
+/* 1280之上 瀏覽器*/
+
+/* 首頁 index.html */
+@media screen and (min-width : 1280px){
+    html{
+        font-size: 16px;
+    }
+    #shopping_car{
+        width: 60%;
+    }
+    
+}
+
+/* 480~1280 平板*/
+@media screen and (max-width : 1280px) and (min-width : 600px){
+    html{
+        font-size: 12px;
+    }
+    .cimg img{
+        max-height: 10vh;
+        margin: 10px;
+    }
+    .cname{
+        margin-right: 5px;
+    }
+    .btn_pay{
+        width: 10vw;
+        height: 3vw;
+        margin: 0.3vw;
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+/* 480以下 手機*/
+@media screen and (max-width : 700px){
+    html{
+        font-size: 11px;
+    }
+    #shopping_car{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        background-color: #eee;
+    }
+    .car_title{
+        display: none;
+    }
+    .chead, .cqty, .cprice, .ccount, .cdel{
+        max-height: 4vh;
+    }
+    .cname::before{
+        content: "書名：";
+    }
+    .order_list{
+        flex: 1 0 80%;
+        min-height: 20vh;
+        flex-direction: column;
+        justify-content: space-around;
+        line-height: 2rem;
+        margin: 20px 0;
+        padding: 10px 0;
+    }
+    .cimg{
+        display: none;
+    }
+    .cauthor{
+        display: none;
+    }
+    
+    #total{
+        flex: 1 1 100%;
+        background-color: #eee;
+        flex-wrap: wrap;
+    }
+    .cost{
+        flex: 1 0 100%;
+    }
+    .btn_pay{
+        width: 60vw;
+        height: 5vw;
+        margin: 0.5vw;
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南波灣書局</title>
+
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="main_flex.css">
+    <link rel="stylesheet" href="qa.css">
+    <!-- 楷書體 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- 正黑體 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/book-2.png">
+    <link rel="bookmark" href="./images/book-2.png">
+</head>
+
+<body>
+    <!-- 頁首 -->
+    <div id="header">
+        <div id="logo">
+            <img src="./images/book.png" alt="">
+            <a href="../../index.html" target="_top" title="回首頁">南波灣書局</a>
+        </div>
+        <div id="user_list">
+            <a href="#" title="user_login">會員名稱，您好</a>
+            <a href="#" title="user_logout">登出</a>
+            <a href="qa2.html" title="QA">常見問題　</a>
+        </div>
+
+    </div>
+
+    <!-- 主體 -->
+    <div id="content">
+        <div id="menu">
+            <tr>
+                <td><a href="qa1.html">購物相關問題</a> </td>
+            </tr>
+
+            <tr>
+                <td><a href="qa2.html">常見問題</a></td>
+            </tr>
+            
+            <tr>
+                <td><a href="customerser.html">聯絡客服</a></td>
+            </tr>
+        </div>
+
+        <div id="main">
+            <div class="book_list">
+                <form >
+                    <table width="1200"  border="0" cellspacing="10" cellpadding="10">
+                        <tr>
+                            <td class="center">
+                                <h1>聯絡客服</h1>
+                                <img src="./images/unnamed.jpg" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="center">
+                                <p>請選擇問題類型:</p>
+                                <p>
+                                    <select name="list" id="list"  >
+                                        <option>-----問題類型-----</option>
+                                        <option>訂購是否成功</option>
+                                        <option>查詢出貨進度</option>
+                                        <option>取消訂單</option>
+                                        <option>退貨</option>
+                                    </select>
+                                </p>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="center">
+                                <p>請選擇問題內容:</p>
+                            
+                                <textarea name="question" rows="20" cols="100" >
+
+                                </textarea>
+                                
+                            </td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td class="center">
+                            <input type="submit" value="送出">              
+                        </td>
+                    </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+    <!-- 頁尾 -->
+
+
+    <div id="footer">
+        Copyright © since 2020 No.1 books.com.tw All Rights Reserved.
+    </div>
+
+</body>
+
+</html>

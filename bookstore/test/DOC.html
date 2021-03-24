@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script>
+        var msg = form1.Group1.value;
+        confirm(msg);
+    </script> -->
+</head>
+
+<body>
+    <form action="#" id="form2">
+
+        <input type="radio" name="Group1" id="Group1_1" value="1" checked>
+        <input type="radio" name="Group1" id="Group1_2" value="2">
+        <input type="radio" name="Group1" id="Group1_3" value="3">
+
+
+        <button onclick="aaa()">
+            test
+        </button>
+        <button type="button" onclick="aaa()">
+            test
+        </button>
+
+        <input type="text" value="P_ID" id="P_ID">
+        <input type="text" value="qty" id="qty">
+
+        <button type="button" id="btn_1" name="btn_1" onclick="test()">test</button>
+
+
+    </form>
+
+    <script>
+        function aaa() {
+            let msg = form2.Group1.value;
+
+
+            confirm(msg);
+
+        }
+
+
+    </script>
+
+    <script>
+        let P_ID = document.querySelector("#P_ID").value;
+        let qty = document.querySelector("#qty").value;
+
+
+
+        window.location.href = 'https://www.w3schools.com/jsref/prop_option_value.asp?' + 'P_ID=' + P_ID + '&qty=' + qty;
+
+        console.log(P_ID + "," + qty);
+
+        function test() {
+            let P_ID = document.querySelector("#P_ID").value;
+            let qty = document.querySelector("#qty").value;
+
+
+            console.log(P_ID + "," + qty);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+﻿處理狀態_code,處理狀態_name,說明文字,處理狀態_出售_name,output_說明文字,處理狀態_購入_name,input_說明文字
+order_status_ID,order_status_name,all_text,status_output_name,status_output_text,status_input_name,status_input_text
+int,str,str,str,str,str,str
+,,,,,,
+1,等待處理,起,備貨中,等待倉儲處理,待處理,等待採購處理
+2,正在處理,承,出貨中,有倉儲處理了,處理中,有採購處理了
+3,已經處理,轉,已出貨,倉儲已將貨品出貨,已採購,採購已送出訂單給上游
+4,待取貨,,,,,
+5,已結案,合,已領取,顧客已收到貨品,已收件,倉儲已收到貨品
+6,已取消,,已取消,,已取消,

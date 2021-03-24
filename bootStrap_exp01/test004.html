@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bs off</title>
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/test004.css">
+    <style>
+        .bg-color_red {
+            background-color: red;
+        }
+        .card{
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://www.maserati.com/tw/zh">
+                            <img src="images/m1.jpg" class="d-block w-100" alt="...">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Quattroporte</h5>
+                            <p>AN ICON OF ITALIAN ELEGANCE.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.maserati.com/tw/zh">
+                            <img src="images/m2.jpg" class="d-block w-100" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>MC20</h5>
+                            <p>THE FIRST OF ITS KIND</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.maserati.com/tw/zh">
+                            <img src="images/m3.jpg" class="d-block w-100" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Ghibli</h5>
+                            <p>YOU’RE NOT LIKE EVERYONE ELSE</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="card col-lg-4">
+                <img class="card-img-top" src="images/400x200.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">資訊縮圖測試文字01</h5>
+                    <p class="card-text">次標題測試文字01</p>
+                    <a href="#" class="btn btn-primary">更多資訊</a>
+                </div>
+            </div>
+            <div class="card col-md-4">
+                <img class="card-img-top" src="images/400x200.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">資訊縮圖測試文字02</h5>
+                    <p class="card-text">次標題測試文字02</p>
+                    <a href="#" class="btn btn-success">更多資訊</a>
+                    <a href="#" class="btn btn-purple">購物車</a>
+                </div>
+            </div>
+            <div class="card col-md-4">
+                <img class="card-img-top" src="images/400x200.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">資訊縮圖測試文字03</h5>
+                    <p class="card-text">次標題測試文字03</p>
+                    <a href="#" class="btn btn-primary">更多資訊</a>
+                    <a href="#" class="btn btn-green">購物車</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap files -->
+    <script type="text/javascript" src="bootstrap-4.6.0-dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="bootstrap-4.6.0-dist/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="bootstrap-4.6.0-dist/js/popper.min.js"></script>
+    <script type="text/javascript" src="bootstrap-4.6.0-dist/js/bootstrap.js"></script>
+</body>
+
+</html>

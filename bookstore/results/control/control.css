@@ -1,0 +1,18 @@
+body {
+    /* width: 900px; */
+    width: 100%;
+}
+
+#menu {
+    flex: 0 0 12%;
+}
+
+.text_red{
+    color: red;
+}
+
+table td{
+    align-items: center;
+    /* color: red; */
+
+}

@@ -650,11 +650,125 @@ footer section.links a img {
 
 @media screen and (max-width: 550px) {
   header div.logo {
-    margin-left: 0.5rem;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
   }
   header div.logo img {
     width: 15vw;
     height: 15vw;
+  }
+
+  main section.backImage {
+    min-height: 30vh;
+    width: auto;
+    background-image: url("../Pictures/reading.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  main section.backImage div.filter {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: auto;
+    min-height: 30vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  main section.second {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  main section.second h2 {
+    font-size: 2rem;
+    margin: 2rem 0rem;
+  }
+  main section.second section.cards {
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+    flex-wrap: wrap;
+  }
+  main section.second section.cards div.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    flex: 1 1 200px;
+  }
+  main section.second section.cards div.card div.img-container {
+    overflow: hidden;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 20%;
+  }
+  main section.second section.cards div.card div.img-container img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 20%;
+    transition: all 0.2s;
+  }
+  main section.second section.cards div.card div.img-container img:hover {
+    transform: scale(1.2);
+  }
+  main section.second section.cards div.card div.img-container1 {
+    overflow: hidden;
+    width: 70%;
+  }
+  main section.second section.cards div.card div.img-container1 img {
+    width: 100%;
+    transition: all 0.2s;
+  }
+  main section.second section.cards div.card div.img-container1 img:hover {
+    transform: scale(1.2);
+  }
+  main section.second section.cards div.card h4 {
+    font-size: 2rem;
+    margin: 1rem 0rem;
+  }
+  main section.second section.cards div.card .h4 {
+    font-size: 3rem;
+    margin: 1rem 0rem;
+  }
+  main section.second section.cards div.card p {
+    font-size: 1.25rem;
+  }
+  main section.second section.cards div.card a {
+    margin: 1rem 0rem;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    background-color: #09777d;
+    color: white;
+    font-size: 1.25rem;
+  }
+  main section.second section.cards div.card a:hover {
+    background-color: chartreuse;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 2rem;
+    justify-content: space-around;
+    background-color: #cfcfcf;
+  }
+  footer div.logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 700px) {
